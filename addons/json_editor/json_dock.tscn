@@ -19,6 +19,7 @@ image = SubResource( 3 )
 size = Vector2( 16, 16 )
 
 [node name="JSON" type="PanelContainer"]
+rect_min_size = Vector2( 0, 192 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -28,7 +29,7 @@ __meta__ = {
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 143.0
-margin_bottom = 42.0
+margin_bottom = 185.0
 dragger_visibility = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -66,10 +67,12 @@ tooltip = "Load a JSON file from disk"
 margin_left = 64.0
 margin_right = 92.0
 margin_bottom = 22.0
+hint_tooltip = "Save contents to disk"
 icon = SubResource( 2 )
 flat = true
 script = ExtResource( 2 )
 icon_name = "Save"
+type = "EditorIcons"
 tooltip = "Save contents to disk"
 
 [node name="File Name" type="Label" parent="VSplitContainer/Tools/Left"]
@@ -96,7 +99,7 @@ tooltip = "Close files and discard any changes"
 [node name="Tree" type="Tree" parent="VSplitContainer"]
 margin_top = 34.0
 margin_right = 136.0
-margin_bottom = 35.0
+margin_bottom = 178.0
 columns = 3
 __meta__ = {
 "_edit_use_anchors_": false
